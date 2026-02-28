@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* =========================
+   Global Apple-Style Buttons
+========================= */
+
+.btn-base {
+  @apply relative inline-flex items-center justify-center 
+  px-8 py-4 rounded-xl font-semibold text-white 
+  transition-all duration-300 ease-out;
+}
+
+.btn-hover {
+  @apply hover:scale-[1.04] hover:-translate-y-1 
+  hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)];
+}
+
+.btn-primary {
+  @apply bg-[#6469e5] hover:bg-[#5a5fd6];
+}
+
+.btn-glass {
+  @apply bg-white/10 backdrop-blur-xl border border-white/20;
+}
+
+.btn-glass:hover {
+  @apply bg-white/15;
+}
