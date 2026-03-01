@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <header className="w-full fixed top-0 left-0 z-50 bg-[#0B0F19]/90 backdrop-blur-md border-b border-gray-800">
@@ -9,11 +11,11 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <nav className="hidden md:flex gap-6 lg:gap-8 text-sm text-gray-300">
-          <a href="#" className="hover:text-white transition whitespace-nowrap">Home</a>
-          <a href="#" className="hover:text-white transition whitespace-nowrap">About</a>
-          <a href="#" className="hover:text-white transition whitespace-nowrap">Products</a>
+          <Link href="/" className="hover:text-white transition whitespace-nowrap">Home</Link>
+          <Link href="/about" className="hover:text-white transition whitespace-nowrap">About</Link>
+          <Link href="/products" className="hover:text-white transition whitespace-nowrap">Products</Link>
           <a href="#" className="hover:text-white transition whitespace-nowrap">Manufacturing</a>
-          <a href="#" className="hover:text-white transition whitespace-nowrap">Contact</a>
+          <Link href="/contact" className="hover:text-white transition whitespace-nowrap">Contact</Link>
         </nav>
 
         {/* CTA */}

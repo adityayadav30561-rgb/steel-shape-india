@@ -1,4 +1,3 @@
-import Navbar from "../components/layout/Navbar";
 import HeroSection from "../components/sections/HeroSection";
 import LogisticsSection from "../components/sections/LogisticsSection";
 import WhySection from "../components/sections/WhySection";
@@ -13,7 +12,6 @@ import SectorsSection from "../components/sections/SectorsSection";
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
-      <Navbar />
       <HeroSection />
       <LogisticsSection />
       <WhySection />
