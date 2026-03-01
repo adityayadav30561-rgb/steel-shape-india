@@ -1,25 +1,28 @@
-import Image from "next/image";
 import Button from "../ui/Button";
 import GlassCard from "../ui/GlassCard";
 import Container from "../ui/Container";
+import RequestQuoteModal from "../shared/RequestQuoteModal";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[100svh] flex items-center overflow-hidden">
+    <section className="relative min-h-screen min-h-[100svh] flex items-center overflow-hidden">
 
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 backdrop-blur-[5px] bg-white/5" />
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/hero-bg.jpg"
+        >
+          <source src="/homepage-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-white/5" />
 
-        <Image
-          src="/hero-bg.jpg"
-          alt="Open Die Forging Process"
-          fill
-          priority
-          className="object-cover"
-        />
-
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/40" />
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F19] via-[#0B0F19]/90 to-transparent" />
       </div>
@@ -49,9 +52,11 @@ export default function HeroSection() {
             </p>
 
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <Button variant="primary">
+              <RequestQuoteModal
+                triggerClassName="px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ease-out inline-flex items-center justify-center bg-[#6469e5] text-white shadow-md hover:scale-105 hover:-translate-y-1 active:scale-95"
+              >
                 REQUEST A QUOTE →
-              </Button>
+              </RequestQuoteModal>
 
               <Button variant="glass">
                 SEND YOUR REQUIREMENTS
@@ -85,7 +90,7 @@ export default function HeroSection() {
                   <p className="text-xs text-gray-400 uppercase tracking-wide">
                     Yield Efficiency
                   </p>
-                  <p className="text-2xl font-semibold">98.4%</p>
+                  <p className="text-2xl font-semibold text-white">98.4%</p>
                 </div>
               </div>
 
