@@ -5,7 +5,7 @@ export default function ProductsHeroSection() {
   const heroImagePlaceholder = "/hero-bg.jpg";
 
   return (
-    <section className="relative w-full bg-[#000000] py-32 overflow-hidden">
+    <section className="relative w-full bg-[#000000] py-20 md:py-32 overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0 opacity-30">
@@ -22,7 +22,7 @@ export default function ProductsHeroSection() {
       <div className="absolute inset-0 bg-black/50 z-0" />
 
       <Container>
-        <div className="relative z-10 grid lg:grid-cols-2 gap-20 items-center">
+        <div className="relative z-10 grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
 
           {/* LEFT CONTENT */}
           <div>
@@ -31,7 +31,7 @@ export default function ProductsHeroSection() {
               Est. 1989 · Ghaziabad, India
             </p>
 
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-8">
               <span className="text-[#f3f4f6] italic">
                 OUR FORGED
               </span>
@@ -49,12 +49,12 @@ export default function ProductsHeroSection() {
               </p>
             </div>
 
-            <div className="flex gap-6">
-              <button className="bg-gradient-to-r from-[#636AE8] to-[#7c82ff] text-white px-8 py-4 rounded-xl font-semibold hover:scale-[1.03] transition-all duration-300 shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              <button className="bg-gradient-to-r from-[#636AE8] to-[#7c82ff] text-white px-6 sm:px-8 py-4 rounded-xl font-semibold hover:scale-[1.03] transition-all duration-300 shadow-lg">
                 Request a Quote →
               </button>
 
-              <button className="bg-[#1e2128] border border-white/10 text-[#f3f4f6] px-8 py-4 rounded-xl font-semibold hover:border-[#636AE8] hover:scale-[1.03] transition-all duration-300">
+              <button className="bg-[#1e2128] border border-white/10 text-[#f3f4f6] px-6 sm:px-8 py-4 rounded-xl font-semibold hover:border-[#636AE8] hover:scale-[1.03] transition-all duration-300">
                 Send Requirements
               </button>
             </div>
@@ -64,7 +64,7 @@ export default function ProductsHeroSection() {
           {/* RIGHT GLASS CARD */}
           <div className="relative">
 
-            <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 shadow-2xl">
+            <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 shadow-2xl">
 
               <div className="flex items-center justify-between mb-6">
                 <span className="text-[#636AE8] text-sm font-semibold">
@@ -75,7 +75,7 @@ export default function ProductsHeroSection() {
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-8 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-8">
 
                 <div>
                   <p className="text-xs text-[#BDC1CA] uppercase tracking-wider mb-2">
@@ -120,3 +120,4 @@ export default function ProductsHeroSection() {
     </section>
   );
 }
+

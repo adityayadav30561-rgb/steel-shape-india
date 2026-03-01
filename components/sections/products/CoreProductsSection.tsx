@@ -3,22 +3,22 @@ import Image from "next/image";
 
 export default function CoreProductsSection() {
   return (
-    <section className="w-full bg-[#000000] py-32">
+    <section className="w-full bg-[#000000] py-20 md:py-32">
       <Container>
 
         {/* HEADER */}
-        <div className="mb-20">
+        <div className="mb-14 md:mb-20">
           <p className="text-[#636AE8] text-xs tracking-[0.35em] uppercase mb-6 font-semibold">
             Manufacturing Excellence
           </p>
 
-          <h2 className="text-5xl font-extrabold text-[#f3f4f6] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#f3f4f6] mb-6">
             Industrial Forging Solutions
           </h2>
 
           <div className="w-16 h-[3px] bg-[#636AE8] mb-8" />
 
-          <p className="text-[#BDC1CA] max-w-4xl text-lg leading-relaxed">
+          <p className="text-[#BDC1CA] max-w-4xl text-base md:text-lg leading-relaxed">
             Steel Shape India manufactures bespoke open die forgings in Carbon,
             Alloy, Stainless, and Duplex Stainless steels. All components are
             produced strictly as per customer drawings, international standards,
@@ -30,16 +30,16 @@ export default function CoreProductsSection() {
         </div>
 
         {/* CORE PRODUCT LINES */}
-        <div className="mb-20">
+        <div className="mb-14 md:mb-20">
           <p className="text-[#636AE8] text-xs tracking-[0.35em] uppercase mb-6 font-semibold">
             Strategic Reach
           </p>
 
-          <h3 className="text-4xl font-extrabold text-[#f3f4f6] mb-6">
+          <h3 className="text-3xl md:text-4xl font-extrabold text-[#f3f4f6] mb-6">
             Core Product Lines
           </h3>
 
-          <div className="w-16 h-[3px] bg-[#636AE8] mb-16" />
+          <div className="w-16 h-[3px] bg-[#636AE8] mb-12 md:mb-16" />
         </div>
 
         {/* GRID */}
@@ -145,12 +145,12 @@ function ProductCard({
   tags: string[];
 }) {
   return (
-    <div className="bg-[#0f1115] rounded-3xl border border-white/5 p-10 flex justify-between items-center gap-10">
+    <div className="bg-[#0f1115] rounded-3xl border border-white/5 p-6 md:p-10 flex flex-col sm:flex-row justify-between sm:items-center gap-8 md:gap-10">
 
       {/* LEFT */}
       <div className="flex-1">
 
-        <h4 className="text-[#f3f4f6] font-bold text-xl mb-4 uppercase">
+        <h4 className="text-[#f3f4f6] font-bold text-lg md:text-xl mb-4 uppercase">
           {title}
         </h4>
 
@@ -160,7 +160,7 @@ function ProductCard({
 
         <div className="space-y-4 text-sm mb-8">
           {specs.map((spec, i) => (
-            <div key={i} className="flex justify-between border-b border-white/5 pb-2">
+            <div key={i} className="flex items-start justify-between gap-4 border-b border-white/5 pb-2">
               <span className="text-[#BDC1CA] uppercase tracking-wide text-xs">
                 {spec[0]}
               </span>
@@ -185,7 +185,7 @@ function ProductCard({
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className="w-[160px] h-[160px] relative">
+      <div className="w-full sm:w-[160px] h-[220px] sm:h-[160px] relative shrink-0">
         <Image
           src={image}
           alt={title}
