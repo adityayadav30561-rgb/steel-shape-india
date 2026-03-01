@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-white transition whitespace-nowrap">Home</Link>
           <Link href="/about" className="hover:text-white transition whitespace-nowrap">About</Link>
           <Link href="/products" className="hover:text-white transition whitespace-nowrap">Products</Link>
-          <a href="#" className="hover:text-white transition whitespace-nowrap">Manufacturing</a>
+          <Link href="/manufacturing" className="hover:text-white transition whitespace-nowrap">Manufacturing</Link>
           <Link href="/contact" className="hover:text-white transition whitespace-nowrap">Contact</Link>
         </nav>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
             <Link href="/" onClick={closeMobileMenu} className="hover:text-white transition">Home</Link>
             <Link href="/about" onClick={closeMobileMenu} className="hover:text-white transition">About</Link>
             <Link href="/products" onClick={closeMobileMenu} className="hover:text-white transition">Products</Link>
-            <a href="#" onClick={closeMobileMenu} className="hover:text-white transition">Manufacturing</a>
+            <Link href="/manufacturing" onClick={closeMobileMenu} className="hover:text-white transition">Manufacturing</Link>
             <Link href="/contact" onClick={closeMobileMenu} className="hover:text-white transition">Contact</Link>
             <button
               type="button"
