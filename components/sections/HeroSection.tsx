@@ -1,4 +1,3 @@
-import Button from "../ui/Button";
 import GlassCard from "../ui/GlassCard";
 import Container from "../ui/Container";
 import RequestQuoteModal from "../shared/RequestQuoteModal";
@@ -58,9 +57,12 @@ export default function HeroSection() {
                 REQUEST A QUOTE →
               </RequestQuoteModal>
 
-              <Button variant="glass">
-                SEND YOUR REQUIREMENTS
-              </Button>
+              <a
+                href="tel:+919560516841"
+                className="px-4 py-3 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-300 ease-out inline-flex items-center justify-center bg-white/10 backdrop-blur-xl border border-white/20 text-white shadow-md hover:scale-105 hover:-translate-y-1 active:scale-95"
+              >
+                CALL US DIRECTLY
+              </a>
             </div>
           </div>
 

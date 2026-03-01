@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container";
 import Image from "next/image";
+import RequestQuoteModal from "@/components/shared/RequestQuoteModal";
 
 export default function FeaturedFlangesSection() {
   return (
@@ -83,9 +84,9 @@ export default function FeaturedFlangesSection() {
             </div>
 
             {/* CTA */}
-            <button className="bg-[#8f92ff] hover:bg-[#7c80ff] text-black font-semibold px-6 sm:px-8 py-4 rounded-xl transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
+            <RequestQuoteModal triggerClassName="bg-[#8f92ff] hover:bg-[#7c80ff] text-black font-semibold px-6 sm:px-8 py-4 rounded-xl transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
               Enquire Now →
-            </button>
+            </RequestQuoteModal>
 
           </div>
 

@@ -9,6 +9,7 @@ import {
   Flame,
   Microscope,
 } from "lucide-react";
+import RequestQuoteModal from "@/components/shared/RequestQuoteModal";
 
 export default function SectorsSection() {
   return (
@@ -73,9 +74,9 @@ export default function SectorsSection() {
             {/* BUTTONS */}
             <div className="flex w-full md:w-auto flex-col sm:flex-row gap-4 sm:gap-6">
 
-              <button className="bg-white text-black px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
+              <RequestQuoteModal triggerClassName="bg-white text-black px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
                 Request for Quote →
-              </button>
+              </RequestQuoteModal>
 
               <button className="bg-[#6f73c8] text-black px-6 sm:px-8 py-4 rounded-xl font-semibold border border-black/20 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
                 ⬆ Upload Your Drawing

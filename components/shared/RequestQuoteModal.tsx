@@ -42,11 +42,11 @@ export default function RequestQuoteModal({
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-[120] flex items-center justify-center p-4 bg-black/65 backdrop-blur-sm"
+          className="fixed inset-0 z-[120] flex items-start md:items-center justify-center p-4 pt-20 md:pt-4 bg-black/65 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="relative w-[92vw] md:w-[60vw] md:h-[40vw] max-w-5xl max-h-[86vh] min-h-[420px] md:min-h-[520px] overflow-y-auto rounded-2xl border border-white/20 bg-[rgba(20,24,38,0.65)] backdrop-blur-2xl shadow-[0_30px_120px_rgba(0,0,0,0.45)]"
+            className="relative w-[92vw] md:w-[60vw] md:h-[40vw] max-w-5xl max-h-[calc(100svh-6rem)] md:max-h-[86vh] min-h-0 md:min-h-[520px] overflow-y-auto rounded-2xl border border-white/20 bg-[rgba(20,24,38,0.65)] backdrop-blur-2xl shadow-[0_30px_120px_rgba(0,0,0,0.45)]"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="sticky top-0 z-10 flex items-start justify-between gap-4 px-5 md:px-8 py-5 border-b border-white/10 bg-[rgba(20,24,38,0.75)] backdrop-blur-2xl">
