@@ -50,11 +50,11 @@ export default function ProductsHeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <button className="bg-gradient-to-r from-[#636AE8] to-[#7c82ff] text-white px-6 sm:px-8 py-4 rounded-xl font-semibold hover:scale-[1.03] transition-all duration-300 shadow-lg">
+              <button className="bg-gradient-to-r from-[#636AE8] to-[#7c82ff] text-white px-6 sm:px-8 py-4 rounded-xl font-semibold transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 shadow-lg">
                 Request a Quote →
               </button>
 
-              <button className="bg-[#1e2128] border border-white/10 text-[#f3f4f6] px-6 sm:px-8 py-4 rounded-xl font-semibold hover:border-[#636AE8] hover:scale-[1.03] transition-all duration-300">
+              <button className="bg-[#1e2128] border border-white/10 text-[#f3f4f6] px-6 sm:px-8 py-4 rounded-xl font-semibold hover:border-[#636AE8] transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95">
                 Send Requirements
               </button>
             </div>
@@ -120,4 +120,6 @@ export default function ProductsHeroSection() {
     </section>
   );
 }
+
+
 

@@ -73,11 +73,11 @@ export default function SectorsSection() {
             {/* BUTTONS */}
             <div className="flex w-full md:w-auto flex-col sm:flex-row gap-4 sm:gap-6">
 
-              <button className="bg-white text-black px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-[1.02] transition-all w-full sm:w-auto">
+              <button className="bg-white text-black px-6 sm:px-8 py-4 rounded-xl font-semibold shadow-lg transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
                 Request for Quote →
               </button>
 
-              <button className="bg-[#6f73c8] text-black px-6 sm:px-8 py-4 rounded-xl font-semibold border border-black/20 hover:scale-[1.02] transition-all w-full sm:w-auto">
+              <button className="bg-[#6f73c8] text-black px-6 sm:px-8 py-4 rounded-xl font-semibold border border-black/20 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
                 ⬆ Upload Your Drawing
               </button>
 
@@ -109,4 +109,6 @@ function SectorCard({ icon, title }: { icon: React.ReactNode; title: string }) {
     </div>
   );
 }
+
+
 

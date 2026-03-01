@@ -66,7 +66,7 @@ export default function InspectionSection() {
             </p>
           </div>
 
-          <button className="bg-[#f3f4f6] text-black px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:scale-[1.02] transition-all duration-300 shrink-0">
+          <button className="bg-[#f3f4f6] text-black px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 shrink-0">
             Download Quality Profile
             <ExternalLink size={16} />
           </button>

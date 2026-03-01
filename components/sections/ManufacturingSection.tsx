@@ -23,7 +23,7 @@ export default function ManufacturingSection() {
             </p>
           </div>
 
-          <button className="bg-[#636AE8] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-[1.03] hover:-translate-y-1 w-full sm:w-auto shrink-0">
+          <button className="bg-[#636AE8] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto shrink-0">
             Download Catalog
           </button>
 

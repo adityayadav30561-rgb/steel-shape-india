@@ -44,11 +44,11 @@ export default function ManufacturingHeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <button className="bg-[#7f82ff] hover:bg-[#6f73f0] text-black px-5 sm:px-7 py-3.5 rounded-xl font-semibold transition-all duration-300">
+              <button className="bg-[#7f82ff] hover:bg-[#6f73f0] text-black px-5 sm:px-7 py-3.5 rounded-xl font-semibold transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95">
                 Request Discussion →
               </button>
 
-              <button className="bg-[#0f1118] border border-white/10 text-white px-5 sm:px-7 py-3.5 rounded-xl font-semibold hover:bg-[#161925] transition-all duration-300">
+              <button className="bg-[#0f1118] border border-white/10 text-white px-5 sm:px-7 py-3.5 rounded-xl font-semibold hover:bg-[#161925] transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95">
                 Send Your Drawing
               </button>
             </div>
@@ -85,4 +85,6 @@ export default function ManufacturingHeroSection() {
     </section>
   );
 }
+
+
 

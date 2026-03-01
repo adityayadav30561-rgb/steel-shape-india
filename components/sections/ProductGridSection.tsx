@@ -90,7 +90,7 @@ export default function ProductGridSection() {
             Custom dimensions and alloy grades available upon request.
           </p>
 
-          <button className="text-[#636AE8] font-semibold flex items-center justify-center gap-2 mx-auto hover:scale-[1.05] transition-all duration-300 text-sm sm:text-base px-2">
+          <button className="text-[#636AE8] font-semibold flex items-center justify-center gap-2 mx-auto transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 text-sm sm:text-base px-2">
             View Detailed Technical Specifications
             <ArrowRight size={16} />
           </button>

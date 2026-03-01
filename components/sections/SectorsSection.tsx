@@ -77,7 +77,7 @@ export default function SectorsSection() {
             </div>
           </div>
 
-          <button className="text-[#636AE8] font-semibold flex items-center gap-2 hover:scale-[1.05] transition-all duration-300">
+          <button className="text-[#636AE8] font-semibold flex items-center gap-2 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95">
             Consult with Engineers
             <ArrowRight size={18} />
           </button>

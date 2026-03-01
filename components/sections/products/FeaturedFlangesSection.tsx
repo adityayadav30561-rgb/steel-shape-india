@@ -83,7 +83,7 @@ export default function FeaturedFlangesSection() {
             </div>
 
             {/* CTA */}
-            <button className="bg-[#8f92ff] hover:bg-[#7c80ff] text-black font-semibold px-6 sm:px-8 py-4 rounded-xl transition-all duration-300 w-full sm:w-auto">
+            <button className="bg-[#8f92ff] hover:bg-[#7c80ff] text-black font-semibold px-6 sm:px-8 py-4 rounded-xl transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 w-full sm:w-auto">
               Enquire Now →
             </button>
 
@@ -105,4 +105,6 @@ export default function FeaturedFlangesSection() {
     </section>
   );
 }
+
+
 

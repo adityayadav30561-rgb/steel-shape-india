@@ -141,7 +141,7 @@ export default function ContactSection() {
               {/* Submit */}
               <button
                 type="button"
-                className="w-full bg-gradient-to-r from-[#636AE8] to-[#7c82ff] text-white py-4 rounded-xl font-semibold hover:scale-[1.02] transition-all duration-300 shadow-lg"
+                className="w-full bg-gradient-to-r from-[#636AE8] to-[#7c82ff] text-white py-4 rounded-xl font-semibold transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 shadow-lg"
               >
                 Submit RFQ Now →
               </button>
@@ -173,3 +173,5 @@ function Input({ label, placeholder }: { label: string; placeholder: string }) {
     </div>
   );
 }
+
+

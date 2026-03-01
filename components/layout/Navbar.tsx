@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <button
           type="button"
-          className="hidden md:inline-flex bg-indigo-600 hover:bg-indigo-700 transition px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium shrink-0"
+          className="hidden md:inline-flex bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium shrink-0"
         >
           Request Quote
         </button>
@@ -57,7 +57,7 @@ export default function Navbar() {
             <Link href="/contact" onClick={closeMobileMenu} className="hover:text-white transition">Contact</Link>
             <button
               type="button"
-              className="mt-1 bg-indigo-600 hover:bg-indigo-700 transition px-4 py-2 rounded-lg text-sm font-medium text-white w-full"
+              className="mt-1 bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 ease-out hover:scale-105 hover:-translate-y-1 active:scale-95 px-4 py-2 rounded-lg text-sm font-medium text-white w-full"
             >
               Request Quote
             </button>
